@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EY4-O4-jPt">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Select your Team-->
+        <scene sceneID="bg9-x6-epF">
+            <objects>
+                <viewController id="VZs-li-T6E" customClass="GroupViewController" customModule="RestaurantVotingSystem" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4p6-4M-Dzz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="X34-MR-oNg">
+                                <rect key="frame" x="107" y="308" width="200" height="280"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MgR-EW-KOi">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="60"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="0Ty-Ec-BxS"/>
+                                            <constraint firstAttribute="width" constant="200" id="VvV-h7-XuZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <state key="normal" title="Marketing">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="VWX-lz-wFJ" kind="show" identifier="MarketingSegue" id="MJG-HV-5Af"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbB-S2-VaA">
+                                        <rect key="frame" x="0.0" y="110" width="200" height="60"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="KMo-fg-NaV"/>
+                                            <constraint firstAttribute="width" constant="200" id="ylB-co-bUP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <state key="normal" title="Design / Product">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="VWX-lz-wFJ" kind="show" identifier="DesignSegue" id="LMk-xX-U8P"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rp8-vL-evr">
+                                        <rect key="frame" x="0.0" y="220" width="200" height="60"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="QYf-B1-UKy"/>
+                                            <constraint firstAttribute="width" constant="200" id="Yd7-UY-n6I"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <state key="normal" title="Finance">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="VWX-lz-wFJ" kind="show" identifier="FinanceSegue" id="L1A-5S-W12"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="X34-MR-oNg" firstAttribute="centerX" secondItem="4p6-4M-Dzz" secondAttribute="centerX" id="48o-CA-nc2"/>
+                            <constraint firstItem="X34-MR-oNg" firstAttribute="centerY" secondItem="4p6-4M-Dzz" secondAttribute="centerY" id="oeu-I0-wjO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kld-b1-7va"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Select your Team" id="4Ma-RP-xY1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lw1-Qv-CA6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="639" y="202"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="eS4-WU-rDu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EY4-O4-jPt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aZp-0J-snd">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VZs-li-T6E" kind="relationship" relationship="rootViewController" id="dtf-a5-bEQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x3m-Xh-02c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-86.956521739130437" y="201.5625"/>
+        </scene>
+        <!--Vote on a Restaurant-->
+        <scene sceneID="qOJ-xh-CVQ">
+            <objects>
+                <collectionViewController id="VWX-lz-wFJ" customClass="VotedCollectionViewController" customModule="RestaurantVotingSystem" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="QLm-C8-Jd0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="WfI-ta-gyk">
+                            <size key="itemSize" width="150" height="150"/>
+                            <size key="estimatedItemSize" width="150" height="150"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="20" minY="20" maxX="20" maxY="20"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="VotedCell" id="4FY-pM-pgO" customClass="RestaurantCollectionViewCell" customModule="RestaurantVotingSystem" customModuleProvider="target">
+                                <rect key="frame" x="20" y="20" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="YWI-kf-UYG">
+                                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XOD-ep-SRb">
+                                            <rect key="frame" x="46.5" y="61.5" width="57" height="27"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="XOD-ep-SRb" firstAttribute="centerY" secondItem="YWI-kf-UYG" secondAttribute="centerY" id="Uet-sV-Zdz"/>
+                                        <constraint firstItem="XOD-ep-SRb" firstAttribute="centerX" secondItem="YWI-kf-UYG" secondAttribute="centerX" id="fvV-bF-7zQ"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <size key="customSize" width="150" height="150"/>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="VWX-lz-wFJ" id="cQ7-ie-d99"/>
+                            <outlet property="delegate" destination="VWX-lz-wFJ" id="vaj-5J-67j"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Vote on a Restaurant" id="4Ig-3u-lxz">
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="trash" id="Uvw-dC-Xl4">
+                                <connections>
+                                    <action selector="trashTapped:" destination="VWX-lz-wFJ" id="ZlF-2J-Fvm"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="refresh" id="ZuH-eE-tTS">
+                                <connections>
+                                    <action selector="refreshTapped:" destination="VWX-lz-wFJ" id="7Cw-Vi-UaO"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GbU-1k-6T8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1424.6376811594205" y="201.5625"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="MJG-HV-5Af"/>
+    </inferredMetricsTieBreakers>
+</document>
