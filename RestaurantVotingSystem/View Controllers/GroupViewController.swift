@@ -1,13 +1,14 @@
 import UIKit
 
+
 class GroupViewController: UIViewController {
     
-    var restaurantController = RestaurantControlller()
+    var restaurantController = RestaurantController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
+
 
     // MARK: - Navigation
 

@@ -1,6 +1,7 @@
 import Foundation
 
-class RestaurantControlller {
+
+class RestaurantController {
     
     
     // MARK: - Properties
@@ -10,7 +11,6 @@ class RestaurantControlller {
         let userDefaults = UserDefaults.standard
         return userDefaults.bool(forKey: "ShouldInitialize")
     }
-    
     
     var marketingArray: [Restuarant] = []
     var designArray: [Restuarant] = []

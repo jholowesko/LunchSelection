@@ -3,7 +3,7 @@ import UIKit
 
 class VotedCollectionViewController: UICollectionViewController {
     
-    var restaurantController = RestaurantControlller()
+    var restaurantController = RestaurantController()
     
     // MARK: - Properties
     
@@ -18,7 +18,7 @@ class VotedCollectionViewController: UICollectionViewController {
     // MARK: UICollectionViewDataSource
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        filteredArray = restaurantController.marketingArray.filter { $0.hasBeenSuggested }
+        filteredArray = selectedArray.filter { $0.hasBeenSuggested }
         let count = filteredArray.count
         return count
     }
