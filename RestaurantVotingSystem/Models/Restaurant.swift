@@ -1,5 +1,6 @@
 import Foundation
 
+
 // MARK: - Restaurant Model:
 
 struct Restuarant: Codable, Equatable {
@@ -9,6 +10,7 @@ struct Restuarant: Codable, Equatable {
     var hasBeenSuggested: Bool
     var didSelfVote: Bool
 }
+
 
     // Array where "hasBeenSuggested" all set to false
     var clearedArray: [Restuarant] = [Restuarant(restaurantName: "Restaurant1", numberOfVotes: 0, previewImage: "image1",                                        hasBeenSuggested: false, didSelfVote: false),
@@ -21,6 +23,7 @@ struct Restuarant: Codable, Equatable {
                                   Restuarant(restaurantName: "Restaurant8", numberOfVotes: 0, previewImage: "image8", hasBeenSuggested: false, didSelfVote: false),
                                   Restuarant(restaurantName: "Restaurant9", numberOfVotes: 0, previewImage: "image9", hasBeenSuggested: false, didSelfVote: false),
                                   Restuarant(restaurantName: "Restaurant10", numberOfVotes: 0, previewImage: "image10", hasBeenSuggested: false, didSelfVote: false)]
+
 
     // Array of mock voting data.
     var sampleArray: [Restuarant] = [Restuarant(restaurantName: "Restaurant1", numberOfVotes: 3, previewImage: "image1",                                        hasBeenSuggested: true, didSelfVote: false),

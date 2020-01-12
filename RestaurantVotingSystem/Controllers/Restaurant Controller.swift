@@ -1,6 +1,5 @@
 import Foundation
 
-
 class RestaurantControlller {
     
     
@@ -42,7 +41,7 @@ class RestaurantControlller {
         marketingArray = sampleArray
         designArray = sampleArray
         financeArray = sampleArray
-        print("Sample Data Reset")
+        print("Reset to Sample Data")
     }
     
     // Clear Current Data
@@ -52,8 +51,6 @@ class RestaurantControlller {
         financeArray = clearedArray
         print("Cleared all Restaurants")
     }
-    
-    
     
 
     // MARK: - Persistent Storage:
