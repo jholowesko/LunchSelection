@@ -3,14 +3,15 @@ import UIKit
 
 class VotedCollectionViewController: UICollectionViewController {
     
-    var restaurantController = RestaurantController()
+    let restaurantController = RestaurantController()
+    
     
     // MARK: - Properties
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
+    
     var selectedArray: [Restuarant] = []
     var filteredArray: [Restuarant] = []
 
@@ -18,27 +19,38 @@ class VotedCollectionViewController: UICollectionViewController {
     // MARK: UICollectionViewDataSource
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        filteredArray = selectedArray.filter { $0.hasBeenSuggested }
+        filteredArray = selectedArray.filter { $0.numberOfVotes > 0 }
         let count = filteredArray.count
         return count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "VotedCell", for: indexPath)
+       guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "VotedCell", for: indexPath) as? RestaurantCollectionViewCell else { return UICollectionViewCell() }
+    
+        cell.restaurant = filteredArray[indexPath.item]
+        
         return cell
     }
     
-    // MARK: - IBActions
-    @IBAction func refreshTapped(_ sender: Any) {
-        restaurantController.resetSampleData()
+    
+    // MARK: - UICollectionViewDelegate
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let selectedRestaurant = filteredArray[indexPath.row]
+        guard let position = selectedArray.firstIndex(of: selectedRestaurant) else { return }
+        
+        if selectedArray[position].didSelfVote == true {
+            selectedArray[position].numberOfVotes -= 1
+            selectedArray[position].didSelfVote.toggle()
+            restaurantController.marketingArray[position].didSelfVote.toggle()
+        } else {
+            selectedArray[position].numberOfVotes += 1
+            selectedArray[position].didSelfVote.toggle()
+            restaurantController.marketingArray[position].didSelfVote.toggle()
+        }
         restaurantController.saveToPersistentStore()
-        collectionView.reloadData()
-        print("Refresh Tapped")
-    }
-    @IBAction func trashTapped(_ sender: Any) {
-        restaurantController.clearCurrentData()
-        restaurantController.saveToPersistentStore()
-        collectionView.reloadData()
-        print("Trash Tapped")
+        self.collectionView.reloadData()
+        print(selectedArray[position])
+        print(restaurantController.marketingArray[position])
     }
 }

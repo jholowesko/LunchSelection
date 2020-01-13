@@ -1,8 +1,7 @@
 import Foundation
 
-
 class RestaurantController {
-    
+
     
     // MARK: - Properties
     
@@ -44,14 +43,9 @@ class RestaurantController {
         print("Reset to Sample Data")
     }
     
-    // Clear Current Data
-    func clearCurrentData() {
-        marketingArray = clearedArray
-        designArray = clearedArray
-        financeArray = clearedArray
-        print("Cleared all Restaurants")
+    func updateItem(indexPath: IndexPath){
     }
-    
+
 
     // MARK: - Persistent Storage:
     

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B7511F4B23CC234F00EBB5AA /* Department.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7511F4A23CC234F00EBB5AA /* Department.swift */; };
+		B7511F4D23CC23B200EBB5AA /* Department Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7511F4C23CC23B200EBB5AA /* Department Controller.swift */; };
 		B776D17E23C815EC00B0C360 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B776D17D23C815EC00B0C360 /* AppDelegate.swift */; };
 		B776D18023C815EC00B0C360 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B776D17F23C815EC00B0C360 /* SceneDelegate.swift */; };
 		B776D18523C815EC00B0C360 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B776D18323C815EC00B0C360 /* Main.storyboard */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B7511F4A23CC234F00EBB5AA /* Department.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Department.swift; sourceTree = "<group>"; };
+		B7511F4C23CC23B200EBB5AA /* Department Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Department Controller.swift"; sourceTree = "<group>"; };
 		B776D17A23C815EC00B0C360 /* RestaurantVotingSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestaurantVotingSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B776D17D23C815EC00B0C360 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B776D17F23C815EC00B0C360 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				B776D19323C8163E00B0C360 /* Restaurant.swift */,
+				B7511F4A23CC234F00EBB5AA /* Department.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -108,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				B789E19623CBC4720071E564 /* Restaurant Controller.swift */,
+				B7511F4C23CC23B200EBB5AA /* Department Controller.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -203,7 +209,9 @@
 			files = (
 				B776D17E23C815EC00B0C360 /* AppDelegate.swift in Sources */,
 				B776D1A223C83DC100B0C360 /* RestaurantCollectionViewCell.swift in Sources */,
+				B7511F4B23CC234F00EBB5AA /* Department.swift in Sources */,
 				B776D18023C815EC00B0C360 /* SceneDelegate.swift in Sources */,
+				B7511F4D23CC23B200EBB5AA /* Department Controller.swift in Sources */,
 				B789E19723CBC4720071E564 /* Restaurant Controller.swift in Sources */,
 				B776D19D23C816C000B0C360 /* SuggestedCollectionViewController.swift in Sources */,
 				B776D19423C8163E00B0C360 /* Restaurant.swift in Sources */,

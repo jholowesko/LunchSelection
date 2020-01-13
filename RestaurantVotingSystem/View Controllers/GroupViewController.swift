@@ -29,4 +29,15 @@ class GroupViewController: UIViewController {
             }
         }
     }
+    
+    
+    // MARK: - IBActions
+    
+    @IBAction func refreshTapped(_ sender: Any) {
+            let userDefaults = UserDefaults.standard
+            userDefaults.set(false, forKey: "ShouldInitialize")
+            restaurantController.saveToPersistentStore()
+            self.loadView()
+            print("Reset Initialize")
+    }
 }
