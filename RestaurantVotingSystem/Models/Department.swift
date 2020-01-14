@@ -1,6 +1,10 @@
 import Foundation
 
-struct Department: Codable, Equatable {
-    var votedArray: [Restuarant]
+
+// MARK: - Department Model:
+
+struct OfficeDepartment: Codable, Equatable {
+    var restaurantArray: [Restuarant]
     let departmentNumber: Int
 }
+

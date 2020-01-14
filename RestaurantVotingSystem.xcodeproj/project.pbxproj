@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B7511F4B23CC234F00EBB5AA /* Department.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7511F4A23CC234F00EBB5AA /* Department.swift */; };
-		B7511F4D23CC23B200EBB5AA /* Department Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7511F4C23CC23B200EBB5AA /* Department Controller.swift */; };
+		B7511F4D23CC23B200EBB5AA /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7511F4C23CC23B200EBB5AA /* ModelController.swift */; };
 		B776D17E23C815EC00B0C360 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B776D17D23C815EC00B0C360 /* AppDelegate.swift */; };
 		B776D18023C815EC00B0C360 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B776D17F23C815EC00B0C360 /* SceneDelegate.swift */; };
 		B776D18523C815EC00B0C360 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B776D18323C815EC00B0C360 /* Main.storyboard */; };
@@ -19,12 +19,11 @@
 		B776D19D23C816C000B0C360 /* SuggestedCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B776D19C23C816C000B0C360 /* SuggestedCollectionViewController.swift */; };
 		B776D19F23C816DA00B0C360 /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B776D19E23C816DA00B0C360 /* GroupViewController.swift */; };
 		B776D1A223C83DC100B0C360 /* RestaurantCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B776D1A123C83DC100B0C360 /* RestaurantCollectionViewCell.swift */; };
-		B789E19723CBC4720071E564 /* Restaurant Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = B789E19623CBC4720071E564 /* Restaurant Controller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B7511F4A23CC234F00EBB5AA /* Department.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Department.swift; sourceTree = "<group>"; };
-		B7511F4C23CC23B200EBB5AA /* Department Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Department Controller.swift"; sourceTree = "<group>"; };
+		B7511F4C23CC23B200EBB5AA /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
 		B776D17A23C815EC00B0C360 /* RestaurantVotingSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestaurantVotingSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B776D17D23C815EC00B0C360 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B776D17F23C815EC00B0C360 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,7 +36,6 @@
 		B776D19C23C816C000B0C360 /* SuggestedCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestedCollectionViewController.swift; sourceTree = "<group>"; };
 		B776D19E23C816DA00B0C360 /* GroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
 		B776D1A123C83DC100B0C360 /* RestaurantCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCollectionViewCell.swift; sourceTree = "<group>"; };
-		B789E19623CBC4720071E564 /* Restaurant Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Restaurant Controller.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,8 +71,8 @@
 				B776D19123C8160400B0C360 /* Resources */,
 				B776D19223C8162400B0C360 /* Storyboards */,
 				B776D19523C8164300B0C360 /* Models */,
-				B776D1A023C83D9500B0C360 /* Views */,
 				B776D19623C8165900B0C360 /* Controllers */,
+				B776D1A023C83D9500B0C360 /* Views */,
 				B776D19723C8165F00B0C360 /* View Controllers */,
 				B776D18B23C815EF00B0C360 /* Info.plist */,
 			);
@@ -112,8 +110,7 @@
 		B776D19623C8165900B0C360 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B789E19623CBC4720071E564 /* Restaurant Controller.swift */,
-				B7511F4C23CC23B200EBB5AA /* Department Controller.swift */,
+				B7511F4C23CC23B200EBB5AA /* ModelController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -211,8 +208,7 @@
 				B776D1A223C83DC100B0C360 /* RestaurantCollectionViewCell.swift in Sources */,
 				B7511F4B23CC234F00EBB5AA /* Department.swift in Sources */,
 				B776D18023C815EC00B0C360 /* SceneDelegate.swift in Sources */,
-				B7511F4D23CC23B200EBB5AA /* Department Controller.swift in Sources */,
-				B789E19723CBC4720071E564 /* Restaurant Controller.swift in Sources */,
+				B7511F4D23CC23B200EBB5AA /* ModelController.swift in Sources */,
 				B776D19D23C816C000B0C360 /* SuggestedCollectionViewController.swift in Sources */,
 				B776D19423C8163E00B0C360 /* Restaurant.swift in Sources */,
 				B776D19B23C816AD00B0C360 /* VotedCollectionViewController.swift in Sources */,

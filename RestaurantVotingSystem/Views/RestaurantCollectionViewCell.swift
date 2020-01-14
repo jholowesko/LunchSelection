@@ -12,7 +12,7 @@ class RestaurantCollectionViewCell: UICollectionViewCell {
     @IBOutlet var restaurantImage: UIImageView!
     
     
-    // When cell is Set -> Update Cell Content.
+    // When restaurant is Set -> Update Cell Content.
     var restaurant: Restuarant? {
         didSet {
             updateViews()
@@ -25,7 +25,7 @@ class RestaurantCollectionViewCell: UICollectionViewCell {
     // Update views when cell is configured.
     func updateViews() {
         restaurantNameLabel.text = restaurant?.restaurantName
-        numberOfVotesLabel.text = String(restaurant!.numberOfVotes)
+        numberOfVotesLabel.text = String("Votes (\(restaurant!.numberOfVotes))")
         votedLabel.text = votedString(didSelfVote: restaurant!.didSelfVote)
         restaurantImage.image = UIImage(named: restaurant!.previewImage)
     }
@@ -33,9 +33,11 @@ class RestaurantCollectionViewCell: UICollectionViewCell {
     // Swithing between "Voted" & "Vote"
     func votedString(didSelfVote: Bool) -> String {
         if didSelfVote {
+            votedLabel.backgroundColor = UIColor.blue
             return "Voted"
         } else {
-            return "Vote"
+            votedLabel.backgroundColor = UIColor.systemGreen
+            return "Tap to Vote"
         }
     }
 }

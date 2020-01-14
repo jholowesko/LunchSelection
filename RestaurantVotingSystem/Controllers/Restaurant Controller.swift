@@ -1,7 +1,8 @@
 import Foundation
 
-class RestaurantController {
 
+class RestaurantController {
+    
     
     // MARK: - Properties
     
