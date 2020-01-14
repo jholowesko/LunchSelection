@@ -51,6 +51,9 @@ class GroupViewController: UIViewController {
             }
         }
         clockLabel.text = "\(hour):\(placeholder)\(minutes)"
+        if hour == 11 && minutes == 0 {
+            triggerNotification()
+        }
     }
 
 
@@ -84,6 +87,11 @@ class GroupViewController: UIViewController {
         modelController.resetSampleData()
     }
     @IBAction func notificationTriggerTapped(_ sender: UIBarButtonItem) {
+        triggerNotification()
+    }
+    
+    // Function Trigger Notification
+    func triggerNotification() {
         let mDepartmentWinner = winnerWinner(deparment: modelController.marketingDepartment)
         let dDepartmentWinner = winnerWinner(deparment: modelController.designDepartment)
         let fDepartmentWinner = winnerWinner(deparment: modelController.financeDepartment)
@@ -104,6 +112,7 @@ class GroupViewController: UIViewController {
         let request = UNNotificationRequest(identifier: "timerDone", content: content, trigger: trigger)
         UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
     }
+    
     
     // Function to find winning Restaurants
     func winnerWinner(deparment: OfficeDepartment) -> String {
